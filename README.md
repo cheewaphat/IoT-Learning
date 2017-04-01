@@ -12,3 +12,7 @@ Meaning Control and monitor
 	EC meter pH sensor  3,400
 	Temperator & Humidity sensor 
 	solinoid
+	
+- Application
+	IOS 
+	Android
