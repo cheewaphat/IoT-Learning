@@ -4,6 +4,21 @@
 
 ต่อไปจะอธิบายย่อๆเรื่องคำสั่ง Git โดยอิงกับการทำงานใน GitHub เป็นสำคัญ (Git มีวิธีใช้พลิกแพลงมากมาย ไปศีกษาการใช้อื่นได้ด้วยการไป Google เอาเอง)
 
+
+#คำส่ัง git
+
+โดยพื้นฐานแล้ว git มีคำสั่งที่หลากหลายมากมายมหาศาลมาก แต่เราจะเริ่มกันด้วยคำสั่งเบื้องต้นที่ทำให้เราสามารถใช้งานได้ก่อนอันได้แก่
+
+git init ใช้สร้าง local repo ขึ้นมา
+git add ใช้ stage เพื่อติดตามตามความเปลี่ยนแปลงของไฟล์
+git commit ใช้เพื่อบันทึกความเปลี่ยนแปลงที่เกิดขึ้นสู่ local repo
+git push ใช้เพื่อส่ง commit ไปยัง remote repo
+git clone ใช้เพื่อคัดลอก repo จาก remote มายัง local
+git fetch ใช้ดึงความเปลี่ยนแปลงจาก remote มายัง local แต่ยังไม่รวมเข้าด้วยกัน
+git merge ใช้รวมความเปลี่ยนแปลงที่ได้มาจาก fetch เข้ากับ local
+git pull ใช้ดึงความเปลี่ยนแปลงจาก remote มายัง local และรวมเข้าด้วยกัน (มีค่าเท่ากับ fetch+merge)
+git log ใช้เพื่อดูว่า git repo มี commit อะไรแล้วบ้าง
+
 ##clone
 
 สมมุติว่ามี repository แห่งนีงใน GitHub เช่น https://github.com/norsez/projectA
@@ -62,7 +77,7 @@ fetch จะดีงสิ่งใหม่ๆจาก origin มาที่
 
 
 
-https://i.stack.imgur.com/yPKXU.png
+<img src="https://i.stack.imgur.com/yPKXU.png" />
 ##Fork คืออะไร Fork ไม่ใช่เรื่องของ Git โดยตรง แต่เป็นเรื่อง software development
 
 การ fork คือการเอางาน open source มาต่อยอดของเราเอง โดยที่ไม่ได้ขี้นตรงกับแผนงานหลักของ open source นั้นๆ ใน GitHub เรา fork ได้โดยง่าย โดยปุ่มบนเวป GitHub เอง (ซี่งจริงๆ ก็ตงจะใช้ clone ภายใน) แต่ GitHub เพิ่มความสามารถในการจัดการโปรเจคที่เรา fork มามากมายด้วย เช่นวันหนี่งเราเกิดอยากจะ push สิ่งที่เราทำบางสิ่งกลับไปที่โปรเจค GitHub ก็มีวิธีให้ทำได้โดยง่ายเป็นระเบียบและมีบันทีกเรียบร้อย
@@ -71,3 +86,4 @@ https://i.stack.imgur.com/yPKXU.png
 
 
 #ref : https://gist.github.com/norsez/3016877
+#ref : https://tupleblog.github.io/use-git-part1/
